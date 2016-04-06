@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!---- meta tags ---->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!---- meta tags ---->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!---- title ---->
+    <title>VE Studios // portfolio - Fitness</title>
+    <!---- title ---->
+
+    <!---- syles ---->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!---- syles ---->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.collagePlus.js"></script>
+    <script src="js/jquery.removeWhitespace.js"></script>
+    <script src="js/jquery.collageCaption.js"></script>
+
+
+    <script type="text/javascript">
+
+    // All images need to be loaded for this plugin to work so
+    // we end up waiting for the whole window to load in this example
+    $(window).load(function () {
+        $(document).ready(function(){
+            collage();
+            $('.Collage').collageCaption();
+        });
+    });
+
+
+    // Here we apply the actual CollagePlus plugin
+    function collage() {
+        $('.Collage').removeWhitespace().collagePlus(
+            {
+                'fadeSpeed'     : 2000,
+                'targetHeight'  : 400,
+                'effect'        : 'effect-6',
+                'direction'     : 'horizontal',
+                'allowPartialLastRow'       : true
+            }
+        );
+    };
+
+    // This is just for the case that the browser window is resized
+    var resizeTimer = null;
+    $(window).bind('resize', function() {
+        // hide all the images until we resize them
+        $('.Collage .Image_Wrapper').css("opacity", 0);
+        // set a timer to re-apply the plugin
+        if (resizeTimer) clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(collage, 200);
+    });
+
+    </script>
+</head>
+<body>
+
+    <!---- Header ---->
+    <section class="header">
+
+        <div class="logo">
+            <h1 class="text-center">
+                <img class="img-responsive" src="veLogo.png">
+                <ul>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </h1>
+<!--            <img class="img-responsive" src="http://placehold.it/250x150" style="margin: auto; max-width:150px;">-->
+        </div>
+
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="services.html">SERVICES</a></li>
+                <li class="active"><a href="index.html">PHOTOGRAPHY</a></li>
+                <li><a href="video_production.html">Video Production</a></li>
+                <li><a href="3d.html">3D & CGI</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+    </section>
+    <!---- Header ---->
+    <section class="body">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="filter">
+                    <ul>
+                        <li><a href="index.html">Addvertising</a></li>
+                        <li><a href="Fashion.html">FASHION</a></li>
+                        <li class="selected"><a href="sports.html.html">SPORTS</a></li>
+                        <li><a href="portrait.html">PORTRAIT</a></li>
+                        <li><a href="still_life.html">STILL LIFE</a></li>
+                    </ul>
+                </div>
+                <ul class="Collage effect-parent" id="container">
+                    <li><a href="images/Fitness/1.jpg"><img src="images/Fitness/1.jpg"><p><i class="fa fa-search-plus"></i></p></a></li>
+                    <li><a href="images/Fitness/2.jpg"><img src="images/Fitness/2.jpg"><p><i class="fa fa-search-plus"></i></p></a></li>
+                    <li><a href="images/Fitness/3.jpg"><img src="images/Fitness/3.jpg"><p><i class="fa fa-search-plus"></i></p></a></li>
+                    <li><a href="images/Fitness/4.jpg"><img src="images/Fitness/4.jpg"><p><i class="fa fa-search-plus"></i></p></a></li>
+                    <li><a href="images/Fitness/5.jpg"><img src="images/Fitness/5.jpg"><p><i class="fa fa-search-plus"></i></p></a></li>
+                    <li><a href="images/Fitness/6.jpg"><img src="images/Fitness/6.jpg"><p><i class="fa fa-search-plus"></i></p></a></li>
+                    <li><a href="images/Fitness/7.jpg"><img src="images/Fitness/7.jpg"><p><i class="fa fa-search-plus"></i></p></a></li>
+                    <li><a href="images/Fitness/8.jpg"><img src="images/Fitness/8.jpg"><p><i class="fa fa-search-plus"></i></p></a></li>
+                    <li><a href="images/Fitness/9.jpg"><img src="images/Fitness/9.jpg"><p><i class="fa fa-search-plus"></i></p></a></li>
+                    <li><a href="images/Fitness/10.jpg"><img src="images/Fitness/10.jpg"><p><i class="fa fa-search-plus"></i></p></a></li>
+                    <li><a href="images/Fitness/11.jpg"><img src="images/Fitness/11.jpg"><p><i class="fa fa-search-plus"></i></p></a></li>
+                    <li><a href="images/Fitness/12.jpg"><img src="images/Fitness/12.jpg"><p><i class="fa fa-search-plus"></i></p></a></li>
+                    <li><a href="images/Fitness/13.jpg"><img src="images/Fitness/13.jpg"><p><i class="fa fa-search-plus"></i></p></a></li>
+                    <li><a href="images/Fitness/14.jpg"><img src="images/Fitness/14.jpg"><p><i class="fa fa-search-plus"></i></p></a></li>
+
+                </ul>
+
+            </div>
+        </div>
+    </section>
+    <!---- JavaScript Files ---->
+
+
+     <footer>
+        <p class="text-center">
+            COPYRIGHTS @ <a href="http://rootcave.com">ROOTCAVE</a> 2015-2016.
+        </p>
+    </footer>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <!---- JavaScript Files ---->
+
+    <!-- Smoothscrool -->
+    <script src="js/SmoothScroll.js"></script>
+
+    <!-- Custom js -->
+
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
